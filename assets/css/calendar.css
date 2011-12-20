@@ -1,0 +1,159 @@
+#calendar-container{
+	margin: 1em auto;
+	height: 6em;
+}
+
+#calendar-container td{
+	padding: 8px;
+	vertical-align: top;
+}
+
+#calendar-container td.calendar-button{
+	vertical-align: middle;
+}
+
+.calendar{
+	text-align: center;
+}
+
+.calendar th{
+	font-size: 77%;
+	background-color: #dedede;
+	border-style: none none solid none;
+	border-width: 1px;
+	border-color: #ccc;
+	text-align: center;
+	color: #7b7b7b;
+	padding-left: 0.3em;
+}
+
+.calendar th:first-child{
+	border-style: none none solid solid;
+	border-width: 1px;
+	border-color: #ccc;
+}
+
+.calendar th:last-child{
+	border-style: none solid solid none;
+	border-width: 1px;
+	border-color: #ccc;
+}
+
+
+.calendar td{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+
+}
+
+.calendar td.inactive{
+	background-color: #f2f2f2;
+	color: #b6a9a9;
+}
+
+.calendar td.date-inactive{
+	color: #dedede;
+}
+
+.calendar td.today{
+	font-weight: bold;
+}
+
+.calendar th.calendar-month{
+	font-size: 119%;
+	color: #2c2c2c;
+	font-weight: bold;
+	background-color: #dedede;
+	border-color: #ccc;
+	border-style: solid none none solid;
+	text-align: left;
+}
+
+.calendar th.calendar-year{
+	font-size: 87%;
+	color: #2c2c2c;
+	font-weight: bold;
+	background-color: #dedede;
+	border-color: #ccc;
+	border-style: solid solid none none;
+	text-align: right;
+}
+
+.calendar-hover{
+	background-color: #b4d5ff;
+	cursor: pointer;
+}
+
+.calendar-arrow-hover{
+	background-color: #dedede;
+	cursor: pointer;
+}
+
+.calendar-selected{
+	background-color: #80B5EA;
+	color: white;
+	cursor: pointer;
+}	
+
+
+/** the following styles all share the same color, they signify which date is being worked on */
+
+.calendar td.depart-clicked{
+	-moz-transition: color .2s linear, background-color .1s linear .1s;
+	-webkit-transition: color .2s linear, background-color .1s linear .1s;
+    transition: color .2s linear, background-color .1s linear .1s;
+	background-color: #E39937;
+	color: white;
+}
+
+.calendar td.arrive-clicked{
+	-moz-transition: color .2s linear, background-color .1s linear .1s;
+	-webkit-transition: color .2s linear, background-color .1s linear .1s;
+    transition: color .2s linear, background-color .1s linear .1s;
+	background-color: #3BD521;
+	color: white;
+}
+/** goes over the date box which is being selected */
+.depart-selected{
+	border-color: #E39937;
+	border-style: solid;
+	outline: none;
+}
+
+.arrive-selected{
+	border-color: #3BD521;
+	border-style: solid;
+	outline: none;
+}
+
+.calendar td.depart-hover{
+	background-color: #E39937;
+	cursor: pointer;
+}
+
+.calendar td.arrive-hover{
+	background-color: #3BD521;
+	cursor: pointer;
+}
+
+/* highlight color of in between dates */
+.calendar td.highlight{
+	background-color: #ccd6fb;
+}
+
+.calendar-button > input{
+	background-color: transparent;
+	font-size: 300%;
+	border: none;
+	color: #b6a9a9;
+}
+.calendar-button > input:hover{
+	-moz-transition: color .3s linear, opacity .3s linear .1s;
+	-webkit-transition: color .3s linear, opacity .3s linear .1s;
+    transition: color .3s linear, opacity .3s linear .1s;
+
+	color: #007FBF;
+	cursor: pointer;
+}
+

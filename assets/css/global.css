@@ -1,0 +1,119 @@
+html{
+	background: url("../../assets/img/bg.jpg") repeat scroll center top #EAEBFC;
+}
+body{
+	height: 100%;
+	width: 100%;
+	/*font-family: monospace, 'Josefin Sans', serif, verdana,'Merriweather', 'Inconsolata';*/
+	font-family:"Droid Sans","Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	background: url("../../assets/img/bg.jpg") repeat scroll center top #EAEBFC;
+}
+
+h1{
+	font-size: 197%;
+}
+
+
+#content{
+	height: 100%;
+	min-width: 600px;
+}
+
+.message {
+	display: block;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.5) inset, 0 2px 3px rgba(0, 0, 0, 0.1);
+    margin: 10px auto 10px auto;
+    padding: 10px 20px;
+	width: 300px;
+}
+
+.message h3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 0;
+	margin-bottom: 0.3em;
+}
+
+.message p {
+    margin-bottom: 0;
+}
+
+.message.info {
+    background-color: #CCDDFF;
+    background-image: -moz-linear-gradient(center top , #EEEEFF, #CCDDFF);
+    border: 1px solid #CADCEA;
+    color: #225B86;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+.message.error {
+    background-color: #FAE2E2;
+    background-image: -moz-linear-gradient(center top , #FAE2E2, #F2CACB);
+    border: 1px solid #EEB7BA;
+    color: #BE4741;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+.message.success {
+    background-color: #E5EDC4;
+    background-image: -moz-linear-gradient(center top , #E5EDC4, #D9E4AC);
+    border: 1px solid #B8C97B;
+    color: #3F7227;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+.message.warning {
+    background-color: #FFFFC0;
+    background-image: -moz-linear-gradient(center top , #FFFFC0, #F9EE9C);
+    border: 1px solid #E5DBAA;
+    color: #6D7829;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+
+
+.wraptocenter {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.wraptocenter * {
+    vertical-align: middle;
+}
+/*\*//*/
+.wraptocenter {
+    display: block;
+}
+.wraptocenter span {
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+}
+/**/
+</style>
+<!--[if lt IE 8]><style>
+.wraptocenter span {
+    display: inline-block;
+    height: 100%;
+}
+
+
+.main-box{
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	border-style:solid;
+	border-width:0.1em;
+	border-color:#ccc;
+	width: 70%;
+	min-width: 600px;
+	margin: 3em auto;
+	text-align: left;
+	padding-bottom: 2em;
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
+	z-index: 1;
+}
+
+

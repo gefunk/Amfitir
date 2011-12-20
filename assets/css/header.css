@@ -1,0 +1,232 @@
+#header{
+	width: 100%;
+    background-image: -o-linear-gradient(top, #abceee, #8aa8ca);
+    background-image: -ms-linear-gradient(top, #abceee, #8aa8ca);
+    background-image: -moz-linear-gradient(top, #abceee, #8aa8ca);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#abceee), to(#8aa8ca));
+    background-image: -webkit-linear-gradient(top, #abceee, #8aa8ca);
+    background-image: linear-gradient(top, #abceee, #8aa8ca);
+    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	min-width: 960px;
+	line-height: 40px;
+	height: 40px;
+}
+
+.inset { text-shadow: 0 1px 1px #FFFFFF; }
+
+#schedule_bold{
+	color: #000;
+}
+
+#finder_light{
+	color: #000;
+}
+
+#header-title{
+	float: right;
+	margin-right: 6em;
+}
+
+#beta{
+	margin-top: 6px;
+	margin-right: 90px;
+	float: right;
+}
+
+#header-title:hover{
+	cursor: pointer;
+}
+
+.bak-header-title-hover{
+	text-shadow: #ADE4FF 0px 1px 0, #000 0 -1px 0;
+}
+
+input, select, textarea, button, .button, .pagination li a, .toolbar li a {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+    /* useful if you don't want a bg color from leaking outside the border: */        
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+}
+
+.drop-shadow-border{
+	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#000000');
+}
+
+
+/**
+ * Main Navigation
+ */
+#main-navigation,
+#main-navigation ul {
+	margin-left: 150px;
+	font-size: 108%;
+}
+
+#main-navigation a {
+	color: #333333;
+	display: block;
+	line-height: 100%;
+	padding: 10px 20px;
+	text-decoration: none;
+    text-shadow: 0 1px 1px #FFF;
+}
+
+#main-navigation a:hover {
+	color: #f85300;
+}
+
+#main-navigation li {
+	float: left;
+    position: relative;
+    -o-transition: background 0.3s ease-out;
+    -ms-transition: background 0.3s ease-out;
+    -moz-transition: background 0.3s ease-out;
+    -webkit-transition: background 0.3s ease-out;
+    transition: background 0.3s ease-out;
+}
+
+.drop-down-menu {
+	display: none;
+	position: absolute;
+	right: 0px;
+	width: 150px;
+	background: #f8f8f8;
+	-moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+.drop-down-menu ul {
+    -o-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+.drop-down-menu ul li {
+	line-height: 30px;
+	padding-left: 5px;
+	cursor: pointer;
+	color: #999999;
+	text-shadow: #ffffff 1px 1px 0;
+	font-size: 109%;
+}
+
+.drop-down-menu ul a {
+	width: 100%;
+}
+
+.drop-down-menu ul li:hover {
+	background-color: #eaeaea;
+	background-image: -o-linear-gradient(top, #f9f9f9, #eaeaea);
+	background-image: -ms-linear-gradient(top, #f9f9f9, #eaeaea);
+	background-image: -moz-linear-gradient(top, #f9f9f9, #eaeaea);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#eaeaea));
+	background-image: -webkit-linear-gradient(top, #f9f9f9, #eaeaea);
+	background-image: linear-gradient(top, #f9f9f9, #eaeaea);
+	border-top: 0;
+  	color: #f85300;
+	text-shadow: none;
+}
+
+#main-navigation li.icon:hover ul{
+	right: 0;
+	left: auto;
+	opacity: 1;
+	z-index: 1;
+}
+
+
+#main-navigation > li > a {
+    line-height: 40px;
+    padding: 0 20px;
+	cursor: pointer;
+}
+
+#main-navigation > li.selectable:hover {
+	background-color: #F8F8F8;
+	background-image: -o-linear-gradient(#DBDBDB, rgba(234, 238, 243, 0.2) 10%, #F8F8F8), -o-linear-gradient(left, #DBDBDB, #F8F8F8 3%, #F8F8F8 97%, #DBDBDB);
+	background-image: -ms-linear-gradient(#DBDBDB, rgba(234, 238, 243, 0.2) 10%, #F8F8F8), -ms-linear-gradient(left, #DBDBDB, #F8F8F8 3%, #F8F8F8 97%, #DBDBDB);
+	background-image: -moz-linear-gradient(#DBDBDB, rgba(234, 238, 243, 0.2) 10%, #F8F8F8), -moz-linear-gradient(left, #DBDBDB, #F8F8F8 3%, #F8F8F8 97%, #DBDBDB);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #DBDBDB), color-stop(10%, rgba(234, 238, 243, 0.2)), color-stop(100%, #F8F8F8)), -webkit-gradient(linear, left center, right center, color-stop(0%, #DBDBDB), color-stop(3%, #F8F8F8), color-stop(97%, #F8F8F8), color-stop(100%, #DBDBDB));
+	background-image: -webkit-linear-gradient(#DBDBDB, rgba(234, 238, 243, 0.2) 10%, #F8F8F8), -webkit-linear-gradient(left, #DBDBDB, #F8F8F8 3%, #F8F8F8 97%, #DBDBDB);
+	background-image: linear-gradient(#DBDBDB, rgba(234, 238, 243, 0.2) 10%, #F8F8F8), linear-gradient(left, #DBDBDB, #F8F8F8 3%, #F8F8F8 97%, #DBDBDB);
+}
+
+#main-navigation > li.selectable:hover > a {
+	-moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+	color: #f85300;
+	text-shadow: none;
+}
+
+#main-navigation > li.active {
+	background-color: #abceee;
+	background-image: -o-linear-gradient(#ABC, rgba(234, 238, 243, 0.2) 10%, #ABCEEE), -o-linear-gradient(left, #ABC, #ABCEEE 3%, #ABCEEE 97%, #ABC);
+	background-image: -ms-linear-gradient(#ABC, rgba(234, 238, 243, 0.2) 10%, #ABCEEE), -ms-linear-gradient(left, #ABC, #ABCEEE 3%, #ABCEEE 97%, #ABC);
+	background-image: -moz-linear-gradient(#ABC, rgba(234, 238, 243, 0.2) 10%, #ABCEEE), -moz-linear-gradient(left, #ABC, #ABCEEE 3%, #ABCEEE 97%, #ABC);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ABC), color-stop(10%, rgba(234, 238, 243, 0.2)), color-stop(100%, #ABCEEE)), -webkit-gradient(linear, left center, right center, color-stop(0%, #ABC), color-stop(3%, #ABCEEE), color-stop(97%, #ABCEEE), color-stop(100%, #ABC));
+	background-image: -webkit-linear-gradient(#ABC, rgba(234, 238, 243, 0.2) 10%, #ABCEEE), -webkit-linear-gradient(left, #ABC, #ABCEEE 3%, #ABCEEE 97%, #ABC);
+	background-image: linear-gradient(#ABC, rgba(234, 238, 243, 0.2) 10%, #ABCEEE), linear-gradient(left, #ABC, #ABCEEE 3%, #ABCEEE 97%, #ABC);
+}
+
+#main-navigation > li.active > a {
+	background: transparent url(../../assets/img/arrow-down.png) no-repeat right center;
+	-moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+#main-navigation > li.icon-selected {
+	background-color: #F8F8F8;
+	background-image: -o-linear-gradient(#DBDBDB, rgba(234, 238, 243, 0.2) 10%, #F8F8F8), -o-linear-gradient(left, #DBDBDB, #F8F8F8 3%, #F8F8F8 97%, #DBDBDB);
+	background-image: -ms-linear-gradient(#DBDBDB, rgba(234, 238, 243, 0.2) 10%, #F8F8F8), -ms-linear-gradient(left, #DBDBDB, #F8F8F8 3%, #F8F8F8 97%, #DBDBDB);
+	background-image: -moz-linear-gradient(#DBDBDB, rgba(234, 238, 243, 0.2) 10%, #F8F8F8), -moz-linear-gradient(left, #DBDBDB, #F8F8F8 3%, #F8F8F8 97%, #DBDBDB);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #DBDBDB), color-stop(10%, rgba(234, 238, 243, 0.2)), color-stop(100%, #F8F8F8)), -webkit-gradient(linear, left center, right center, color-stop(0%, #DBDBDB), color-stop(3%, #F8F8F8), color-stop(97%, #F8F8F8), color-stop(100%, #DBDBDB));
+	background-image: -webkit-linear-gradient(#DBDBDB, rgba(234, 238, 243, 0.2) 10%, #F8F8F8), -webkit-linear-gradient(left, #DBDBDB, #F8F8F8 3%, #F8F8F8 97%, #DBDBDB);
+	background-image: linear-gradient(#DBDBDB, rgba(234, 238, 243, 0.2) 10%, #F8F8F8), linear-gradient(left, #DBDBDB, #F8F8F8 3%, #F8F8F8 97%, #DBDBDB);
+}
+
+#main-navigation > li.user-name {
+
+    padding: 5px 5px;
+	float: right;
+}
+
+#main-navigation > li.icon {
+	cursor: pointer;
+    padding: 5px 5px;
+	float: right;
+}
+
+#main-navigation > li.icon:hover ul {
+	right: 0;
+}
+
+#main-navigation > li > a.with-profile-image > span {
+    background: transparent url(../../assets/img/profile-image-bg.png) no-repeat center center;
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#main-navigation > li > a.with-profile-image > span > img {
+    padding: 8px 5px;
+}

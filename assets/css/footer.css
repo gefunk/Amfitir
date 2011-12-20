@@ -1,0 +1,46 @@
+#footer{
+	border-top: 1px solid #CCC;
+	width: 50%;
+	padding: 1em 0em;
+	margin: 3em auto 0em auto;
+}
+
+#footer table{
+
+}
+
+#footer table td{
+	vertical-align: top;
+	padding: 0.2em 4em;	
+	color: #333333;
+	font-size: 93%;
+	text-shadow: 0 1px 1px #FFFFFF;
+}
+
+#footer a{
+	cursor: pointer;
+	text-decoration: none;
+	color: #333;
+}
+
+
+
+
+#footer a:hover{
+	color: #0066FF;
+}
+
+
+#footer table td li.heading{
+	font-size: 85%;
+	color: #999999;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+#company-declaration{
+	color: #333333;
+	margin-top: 0.3em;
+	text-align: center;
+	font-size: 77%;
+	text-shadow: 0 1px 0 #FFFFFF;
+}

@@ -1,0 +1,79 @@
+#contact-form{
+	width: 60%;
+	padding-bottom: 0em;
+}
+
+#contact-form > p{
+	margin-top: 0.8em;
+	font-size: 153.9%;
+	text-align: center;
+}
+
+#contact-header{
+	margin: 0.3em auto;
+	width: 90%;
+	color: #556677;
+	line-height: 30px;
+	text-shadow: 0 1px 2px #FFFFFF;
+	border-bottom: 1px solid #ccc;
+	padding: 0.5em 0.7em;
+}
+
+#contact-form > table{
+	margin: 1em 3em;
+}
+
+#contact-form > table > tbody > tr > td{
+	padding: 0.7em 0.3em 0.7em 0;
+}
+
+td.label > table > tbody > tr:first-child > td {
+	font-size: 93%;
+	font-weight: bold;
+	text-align: right;
+	outline: 0 none;
+	padding: 0;
+	margin: 0;
+}
+
+td.label > table > tbody > tr:last-child > td {
+	color: #666;
+	font-size: 85%;
+	font-weight: normal;
+	text-align: right;
+	width: 200px;
+	line-height: 11px;
+	outline: 0 none;
+	padding: 0;
+	margin: 0;
+}
+
+td.label em{
+	color: red;
+	font-style: normal;
+	margin-left: 0.2em;
+}
+
+#contact-form input{
+	border: 1px solid #AAAAAA;
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+	font-size: 168%;
+	padding: 4px;
+	width: 400px;
+	max-width: 400px;
+}
+
+#contact-form textarea{
+	border: 1px solid #AAAAAA;
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+	font-size: 168%;
+	padding: 4px;
+	width: 400px;
+	max-width: 400px;
+}
+
+#contact-buttons{
+	padding: 20px 60px;
+}

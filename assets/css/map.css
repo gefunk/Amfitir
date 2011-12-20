@@ -1,0 +1,226 @@
+html{
+    height: 100%;
+}
+
+body {
+    background: none repeat scroll 0 0 #F2F2F2 !important;
+    color: #333333;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+#container{
+    margin: auto; /* center in viewport */
+    width: 960px;
+}
+
+#input{
+    margin: auto;
+    width: 90%;
+    background-color: #FFF;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.block{
+    margin: 10px;
+    width: 80%;
+    padding-left: 5px;
+}
+
+.block input{
+    width: 100%;
+}
+
+#input label{
+    font-size:85%;
+    color: #AAA;
+    padding-right: 5px;
+}
+
+#input .description{
+    text-align: right;
+    font-size:77%;
+    color: #CCC;
+    font-style:italic;
+}
+
+
+.route_info{
+    vertical-align:top;
+}
+/* schedule row styles */
+
+#schedule_list{
+    margin: 1em auto auto auto;
+    width: 90%;
+    background-color: #FFF;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    padding-bottom: 1em ;
+    padding-top: 1em;
+    font-size: 85%;
+}
+
+#schedule_list .heading{
+    font-size:85%;
+    color: #AAA;
+    padding-right: 5px;
+    padding-left: 5px;
+
+}
+
+.schedule{
+    margin: 1em;
+    cursor: pointer;
+}
+
+
+
+
+
+/* applies to all schedules */
+
+.schedule_row{
+	display: inline-block;
+	height: 20px;
+    line-height: 20px;
+    padding: 5px 10px 5px 15px;
+}
+
+.schedule_group{
+	border-width: 1px medium;
+	border-style: solid none;
+	border-color: #CCC;
+	background-color: #F1F1F1;
+
+}
+
+.schedule_first{
+	border-left: 1px solid  #CCC;
+    border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
+    -webkit-border-radius: 15px 0 0 15px;
+}
+
+.schedule_last{
+	border-right: 1px solid #CCC;
+    border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    -webkit-border-radius: 0 15px 15px 0;
+}
+
+.schedule_not_selected{
+	background-color: #F1F1F1;
+}
+
+.schedule_selected{
+	background-color: #FFF;
+	color: #333;
+	border-bottom: none;
+	height: 21px;
+}
+
+.schedule_first_selected{
+    border-radius: 15px 0 0 0;
+    -moz-border-radius: 15px 0 0 0;
+    -webkit-border-radius: 15px 0 0 0;
+}
+
+.schedule_last_selected{
+    border-radius: 0 15px 0 0;
+    -moz-border-radius: 0 15px 0 0;
+    -webkit-border-radius: 0 15px 0 0;
+}
+
+.schedule_hover{
+	color: #0085cf;
+	background-color: #e9eff5;
+}
+
+.heading{
+	font-size: 77%;
+	color: #F1F1F1;
+}
+
+.port_data th{
+	font-size: 77%;
+	color: #F1F1F1;
+}
+
+.port_data td{
+	padding-right: 10px;
+}
+
+
+
+.ship_info{
+	float: left;
+	margin-right: 1em;
+}
+
+.schedule_ports{
+	display: inline-block;
+}
+
+.sub_info{
+    cursor: auto;
+	margin-top: -1px;
+	padding-top: .75em;
+	border-width: 1px medium;
+	border-style: solid none;
+	border-right: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+	border-color: #CCC;
+	border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    padding: 0.8em;
+}
+
+.sub_info_first{
+	border-radius: 0px 15px 15px 15px;
+    -moz-border-radius: 0px 15px 15px 15px;
+    -webkit-border-radius: 0px 15px 15px 15px;
+}
+
+
+
+.schedule_info{
+	margin-left: 1em;
+	display: inline-block;	
+	color: #CCC;
+}
+
+.transit_time{
+	padding-left: 1em;
+	font-size: 140%;
+	font-weight: bold;
+	color: #CCC;	
+}
+
+#footer{
+    margin: 1em auto auto auto;
+    border-top: 1px solid #CCC;
+    width: 90%;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+#footer li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
