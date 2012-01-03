@@ -31,7 +31,6 @@ function AttachIconsHandler(){
 			function(e){
 				var target = e.target; // target grabs the node that triggered the event
 				$target = $(target); // wrap in jquery object
-								
 				if($target.hasClass('icon') || $target.parent().hasClass('icon') ){
 
 					$("#main-navigation > li.icon").removeClass('icon-selected');
@@ -58,3 +57,4 @@ function AttachIconsHandler(){
 		});
 	
 }
+

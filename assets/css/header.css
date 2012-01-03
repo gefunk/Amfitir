@@ -128,7 +128,24 @@ input, select, textarea, button, .button, .pagination li a, .toolbar li a {
 
 .drop-down-menu ul a {
 	width: 100%;
+	color: #999999;
 }
+.drop-down-menu ul a:link {
+	text-decoration:none;
+}      /* unvisited link */
+
+.drop-down-menu ul a:visited {
+	text-decoration:none;
+}  /* visited link */
+
+.drop-down-menu ul a:hover {
+	color: #f85300;
+	text-decoration:none;
+}  /* mouse over link */
+
+.drop-down-menu ul a:active {
+	text-decoration:none;
+}  /* selected link */
 
 .drop-down-menu ul li:hover {
 	background-color: #eaeaea;

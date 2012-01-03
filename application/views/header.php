@@ -10,10 +10,10 @@
       <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery-ui.js"></script>
       <link type="text/css" href="<?php echo base_url(); ?>assets/css/pepper-grinder/jquery-ui-1.8.10.custom.css" rel="stylesheet" />
       <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.3.0/build/cssreset/reset-min.css&3.3.0/build/cssfonts/fonts-min.css&3.3.0/build/cssgrids/grids-min.css">
-      <link type="text/css" href="<?php echo base_url(); ?>assets/css/global.css" rel="stylesheet" />
+    <link type="text/css" href="<?php echo base_url(); ?>assets/css/global.css" rel="stylesheet" />
 	<link type="text/css" href="<?php echo base_url(); ?>assets/css/header.css" rel="stylesheet" />
 	<link type="text/css" href="<?php echo base_url(); ?>assets/css/footer.css" rel="stylesheet" />
-	  <link type="text/css" href="<?php echo base_url(); ?>assets/css/custom-theme/jquery-ui.css" rel="stylesheet" />
+	<link type="text/css" href="<?php echo base_url(); ?>assets/css/custom-theme/jquery-ui.css" rel="stylesheet" />
 	<link type="text/css" href="<?php echo base_url(); ?>assets/css/calendar.css" rel="stylesheet" />
 	<script src="http://cdn.jquerytools.org/1.2.6/tiny/jquery.tools.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/typewatch.js"></script>
@@ -43,18 +43,13 @@
 	<link type="text/css" href="<?php echo base_url(); ?>assets/css/signup.css" rel="stylesheet" />
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/signup.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata|Merriweather|Josefin+Sans|Droid+Sans">
 	<script language="javascript">
 
-	
-	
 		$(function() {
 			
 			
 			AttachIconsHandler();
-			
-
-			
+		
 			// initialize map
 			map = new Microsoft.Maps.Map(document.getElementById("mapDiv"),{credentials: credentials});
 			console.log("map initialized",map);
@@ -64,8 +59,7 @@
 			//$('#mapDiv').show();
 			
 		});
-	
-	
+		
 	</script>
 	
 	<!-- google analytics -->
@@ -108,7 +102,7 @@
 	<div id="user-menu" class="drop-down-menu">
 		<ul>
 			<li><a>Sign in</a></li>
-			<li><a>Sign up</a></li>
+			<li id="sign-up"><a href="signup">Sign up</a></li>
 		</ul>
 	</div>
 	<div id="settings-menu" class="drop-down-menu">

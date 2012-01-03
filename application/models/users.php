@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Contact extends CI_Model {
+class Users extends CI_Model {
 
     function __construct()
     {
@@ -44,5 +44,23 @@ class Contact extends CI_Model {
 		
 		return $confirm_code;
 	}
-
+	
+	/**
+	check whether this user is already registered in system
+	runs a query for the user_id (email address), is already registered
+	*/
+	function check_user_id($user_id)
+	{
+		$this->db->select('email');
+		$this->db->from('users');
+		$this->db->where('email', $user_id); 
+		
+		$query = $this->db->get();
+		
+		if ($query->num_rows() > 0){
+			return false;
+		}
+		
+		return true;
+	}
 }

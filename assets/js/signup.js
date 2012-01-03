@@ -4,7 +4,8 @@ $(window).load(function() {
 	// submit button click
 	$("#signup-buttons > .button:eq(1)").click(function(){
 		if(validateInputs()){
-			console.log("Should submit box");
+			// submit the new user to the backend
+			$("#new-user").submit();
 		}
 	});
 	
@@ -81,7 +82,45 @@ $(window).load(function() {
 		
 	});
 	
-	// validate inputs
+	// check user id in database
+	$("#email").keyup(function(){
+		var self = $(this);
+		if(timer) {
+            clearTimeout(timer);
+            timer = null;
+        }
+        timer = setTimeout( function() {
+			// check if it is a valid email
+			if(isValidEmailAddress(self.val())){
+					// check userid is not registered in the db already
+					$.ajax({
+						url: 'navi/check_user_id_does_not_exist',
+						dataType: 'json',
+						type: 'POST',
+						data: ({user_id: self.val()}),
+						success: function(data){
+							if(!data){
+								// highlight it red
+								$("#email").addClass("nomatch");
+								// change the text to say this already exists
+								var errorMessage = "This email is already registered, if you need to retrieve your password please click here";
+								$("#header").after(GetMessageBox(errorMessage, 0)).fadeIn('slow');
+								$('.message').delay(CI.info_delay);
+							}else{
+								// highlight it green
+								$("#email").addClass("match");
+								$('.message').fadeOut('slow');
+							}
+						}
+					});
+			}else{
+				$("#email").removeClass();
+			}
+		
+            
+        }, 300);
+	});
+	
 	
 });
 
@@ -135,8 +174,17 @@ function validateInputs(){
 		
 	}
 	
-	$("#header").after(GetMessageBox(errorMessage, 0)).fadeIn('slow');
-	$('.message').delay(CI.info_delay).fadeOut('slow');
+	// last because this trumps all other errors
+	if($("#email").hasClass("nomatch")){
+		errorMessage = "This email is already registered, if you need to retrieve your password please click here";
+		error = false;
+	}
+	// check if there is an error to display
+	if(!error){
+		$("#header").after(GetMessageBox(errorMessage, 0)).fadeIn('slow');
+		$('.message').delay(CI.info_delay).fadeOut('slow');
+	}
+	
 	
 	return error;
 }

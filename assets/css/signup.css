@@ -2,11 +2,11 @@
 	width: 60%;
 }
 
-#signup > table{
+#signup > form > table{
 	margin: 1em 3em;
 }
 
-#signup > table > tbody > tr > td{
+#signup > form > table > tbody > tr > td{
 	padding: 0.7em 0.3em 0.7em 0;
 }
 

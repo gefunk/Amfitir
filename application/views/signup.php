@@ -3,6 +3,7 @@
 		<div id="search-title">
 			<div id="search-header"><h1>Sign Up</h1></div>
 		</div>
+		<form id="new-user" action="<?php echo base_url(); ?>navi/save_signup_info" method="post">
 		<table border="0" cellspacing="5" cellpadding="5">
 			<tr>
 				<td class="label">
@@ -97,6 +98,7 @@
 				<td><input type="text" name="country" value="" id="country"></td>
 			</tr>
 		</table>
+		</form>
 		<div id="signup-buttons" class="bottom-buttons">
 			<div class="button">Clear</div>
 			<div class="button">Submit</div>

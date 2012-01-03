@@ -12,6 +12,7 @@ class Main extends CI_Controller {
 		$this->load->model('loclookup');  
 		$this->load->model('schedules'); 
 		$this->load->model('contact');
+		$this->load->model('users');
 		$this->load->library('session');
 		//$this->output->enable_profiler(TRUE);
 		$this->load->library('form_validation');
@@ -73,21 +74,7 @@ class Main extends CI_Controller {
 		$this->load->view('footer');
 	}
 	
-	function save_signup_info()
-	{
-		$name = $this->input->post('name');
-		$email = $this->input->post('email');
-		$password $this->input->post('password');
-		$company = $this->input->post('company');
-		$telephone_no = $this->input->post('telephone_no');
-		$business_type = $this->input->post('business_type');
-		$city = $this->input->post('city');
-		$state = $this->input->post('state');
-		$zip = $this->input->post('zip');
-		$country = $this->input->post('country');
-		
-		
-	}
+
 	
 	function search(){
 		$this->load->view('search');
