@@ -63,4 +63,22 @@ class Users extends CI_Model {
 		
 		return true;
 	}
+	
+	function confim_user_email($confirm_code)
+	{
+		$this->db->select('confirm_code');
+		$this->db->from('users');
+		$this->db->where('confirm_code', $confirm_code); 
+
+		$query = $this->db->get();
+		// true
+		if ($query->num_rows() == 1){
+			$data = array('confirmed' => 1);
+			$this->db->where('confirm_code', $confirm_code); 
+			$this->db->update('users', $data);
+			return true;
+		}
+		
+		return false;
+	}
 }

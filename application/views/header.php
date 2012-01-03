@@ -43,6 +43,9 @@
 	<link type="text/css" href="<?php echo base_url(); ?>assets/css/signup.css" rel="stylesheet" />
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/signup.js"></script>
 	
+	
+	<link type="text/css" href="<?php echo base_url(); ?>assets/css/thankyou.css" rel="stylesheet" />
+	
 	<script language="javascript">
 
 		$(function() {

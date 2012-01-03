@@ -58,3 +58,9 @@ function AttachIconsHandler(){
 	
 }
 
+function DelayChangingPage(page, timeInMillis){
+	setTimeout(function () {
+		window.location = page;
+	}, timeInMillis);
+}
+
